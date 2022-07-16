@@ -14,6 +14,7 @@ public class TrabajoFinal {
     static int mesesTurnoDia;
     static int mesesTurnoNoche;
     static double pagoVacaciones;
+    static double diasCorrespondientes;
 
 
     public static void main(String[] args) throws IOException {
@@ -63,8 +64,8 @@ public class TrabajoFinal {
                 case 3:
                     System.out.println("La opcion seleccionada es Calculo de Vacaciones Personal MI MARKET: ");
                     double pagoTotal = pagoVacaciones();
-                    System.out.printf("El pago por vacaciones pendientes es: S/. %.2f",pagoTotal);
-                    System.out.println("");
+                    diasCorrespondientes = (mesesTurnoDia + mesesTurnoNoche) * 2.5;
+                    System.out.printf("La cantidad de dias por concepto de vacaciones es: %.1f, el monto a pagar es %.2f soles ",diasCorrespondientes,pagoTotal);
                     break;
 
                 case 4:
